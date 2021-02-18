@@ -4,7 +4,24 @@
   "description": "<h1 align=\"center\"> TheInternetProject </h1>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx standard",
+    "lint:fix": "npx standard --fix",
+    "pretest": "webdriver-manager update",
+    "test": "npm run test:chrome && npm run test:firefox" ,
+    "test:chrome": "protractor configurations/chromeConfig.js",
+    "test:firefox": "protractor configurations/firefoxConfig.js"
+  },
+  "standard": {
+    "globals": [
+      "beforeAll",
+      "beforeEach",
+      "browser",
+      "by",
+      "describe",
+      "element",
+      "expect",
+      "it"
+    ]
   },
   "repository": {
     "type": "git",
@@ -18,6 +35,7 @@
   },
   "homepage": "https://github.com/anacosantos/TheInternetProject#readme",
   "dependencies": {
+    "lint": "^0.7.0",
     "protractor": "^7.0.0",
     "protractor-helper": "^4.2.0",
     "standardjs": "^1.0.0-alpha"
