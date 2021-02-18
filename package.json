@@ -1,0 +1,25 @@
+{
+  "name": "TheInternetProject",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\"> TheInternetProject </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anacosantos/TheInternetProject.git"
+  },
+  "keywords": [],
+  "author": "Ana Carolina O dos Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anacosantos/TheInternetProject/issues"
+  },
+  "homepage": "https://github.com/anacosantos/TheInternetProject#readme",
+  "dependencies": {
+    "protractor": "^7.0.0",
+    "protractor-helper": "^4.2.0",
+    "standardjs": "^1.0.0-alpha"
+  }
+}
