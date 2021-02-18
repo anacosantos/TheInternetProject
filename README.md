@@ -1,12 +1,20 @@
-# TheInternetProject
+<h1 align="center"> TheInternetProject </h1>
 
-1) I created a folder and push to Github create a new repository on the command line:
+Step by step to creating test project. I used GitHub repositories and actions to do a continouus integration.
 
-or create a new repository on the command line
-echo "# TheInternetProject" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/anacosantos/TheInternetProject.git
-git push -u origin main
+- I created a folder and push to Github create a new repository on the command line:
+
+- [X] echo "# TheInternetProject" >> README.md
+- [X] git init
+- [X] git add README.md
+- [X] git commit -m "first commit"
+- [X] git branch -M main
+- [X] git remote add origin https://github.com/anacosantos/TheInternetProject.git
+- [X] git push -u origin main
+
+:trophy: GitHub repository created :heavy_check_mark:
+
+### Who reviewed my project?  
+|name|email|
+| -------- | -------- | 
+|Marcus Menezes|mvgmenezes@gmail.com|
