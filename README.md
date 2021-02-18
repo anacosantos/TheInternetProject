@@ -19,3 +19,11 @@ My project was based on this website: https://the-internet.herokuapp.com/
 |name|email|
 | -------- | -------- | 
 |Marcus Menezes|mvgmenezes@gmail.com|
+
+- I used:
+ - WAPPALYZER (is an open source tool available on GitHub that helps you identify the technologies used on a website.)
+ - Proctrator
+ - Protractor-helper
+ - faker
+ - selenium webdriver
+ - lint
