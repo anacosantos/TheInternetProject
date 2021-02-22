@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1614009621641' stop='1614009621669'>
+    <name>Given I'm at the home page Find element of Welcome to the-internet</name>
+    <title>Given I'm at the home page Find element of Welcome to the-internet</title>
+    <test-cases>
+        <test-case start='1614009621641' status='failed' stop='1614009621668'>
+            <name>get elements</name>
+            <title>get elements</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: The "url" argument must be of type string. Received undefined</message>
+                <stack-trace>TypeError [ERR_INVALID_ARG_TYPE] [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+                    at validateString (internal/validators.js:120:11)
+                    at Url.parse (url.js:159:3)
+                    at urlParse (url.js:154:13)
+                    at Url.resolve (url.js:667:29)
+                    at Object.urlResolve [as resolve] (url.js:663:40)
+                    at ProtractorBrowser.get (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/protractor/built/browser.js:651:17)
+                    at Home.visit (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/page-objects/home.js:10:13)
+                    at UserContext.&lt;anonymous> (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/specs/home.spec.js:9:14)
+                    at /Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                From: Task: Run beforeAll in control flow
+                    at UserContext.&lt;anonymous> (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at QueueRunner.execute (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+                    at queueRunnerFactory (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+                    at UserContext.fn (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5325:13)
+                    at attempt (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at runNext (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+                    at /Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/specs/home.spec.js:7:3)
+                    at addSpecsToSuite (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/specs/home.spec.js:4:1)
+                    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+                    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+                    at Module.load (internal/modules/cjs/loader.js:879:32)
+                    at Function.Module._load (internal/modules/cjs/loader.js:724:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

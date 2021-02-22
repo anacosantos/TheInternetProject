@@ -7,7 +7,8 @@ class Home {
   }
 
   visit () {
-    browser.get(provideConfig().baseUrl)
+    //browser.get(provideConfig().baseUrl)
+    browser.get('')
   }
 }
 

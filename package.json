@@ -21,7 +21,7 @@
       "describe",
       "element",
       "expect",
-      "it", 
+      "it",
       "jasmine"
     ]
   },
@@ -37,6 +37,7 @@
   },
   "homepage": "https://github.com/anacosantos/TheInternetProject#readme",
   "dependencies": {
+    "faker": "^5.4.0",
     "jasmine-allure-reporter": "^1.0.2",
     "lint": "^0.7.0",
     "protractor": "^7.0.0",
