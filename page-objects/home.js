@@ -1,9 +1,12 @@
+const { browser } = require('protractor')
+const provideConfig = require('../utils/configCreator')
+
 class Home {
     constructor () {
         this.heading = element(by.xpath("//h1[@class='heading']"))
     }
     visit () {
-      browser.get('https://the-internet.herokuapp.com/')
+     browser.get(provideConfig().baseUrl)
     }
   }
   

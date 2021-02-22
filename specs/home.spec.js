@@ -7,7 +7,6 @@ describe('Given I\'m at the home page', () => {
     beforeAll(() => {
       homepage = new Home()
       homepage.visit()
-      
     });
     describe('Find element of Welcome to the-internet', () => {
         it('get elements', () => {
