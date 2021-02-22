@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "npx standard",
     "lint:fix": "npx standard --fix",
-    "pretest": "webdriver-manager update",
+    "pretest:github": "webdriver-manager update —version.chrome 88.0.4324.96",
+    "pretest:local": "webdriver-manager update",
     "test": "npm run test:chrome && npm run test:firefox",
     "test:chrome": "protractor configurations/chromeConfig.js",
     "test:firefox": "protractor configurations/firefoxConfig.js"
