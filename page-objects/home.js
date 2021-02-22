@@ -2,12 +2,13 @@ const { browser } = require('protractor')
 const provideConfig = require('../utils/configCreator')
 
 class Home {
-    constructor () {
-        this.heading = element(by.xpath("//h1[@class='heading']"))
-    }
-    visit () {
-     browser.get(provideConfig().baseUrl)
-    }
+  constructor () {
+    this.heading = element(by.xpath("//h1[@class='heading']"))
   }
-  
-  module.exports = Home
+
+  visit () {
+    browser.get(provideConfig().baseUrl)
+  }
+}
+
+module.exports = Home

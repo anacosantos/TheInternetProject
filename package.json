@@ -20,7 +20,8 @@
       "describe",
       "element",
       "expect",
-      "it"
+      "it", 
+      "jasmine"
     ]
   },
   "repository": {
