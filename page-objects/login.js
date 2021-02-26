@@ -1,4 +1,4 @@
-const faker = require('faker')
+
 const { element } = require('protractor')
 class Login {
   constructor () {
@@ -6,13 +6,12 @@ class Login {
     this.passwordLabel = element(by.xpath("//label[.='Password']"))
     this.userNameField = element(by.xpath("//input[@id='username']"))
     this.passwordField = element(by.xpath("//input[@id='password']"))
-    this.loginButton = element(by.css(".fa"))
+    this.loginButton = element(by.css('.fa'))
     this.successMessage = element(by.css('.success'))
     this.errorMessage = element(by.css('.error'))
     this.logoutButton = element(by.xpath('//*[@id="content"]/div/a'))
     this.closeButton = element(by.css('.close'))
     this.greenMessage = element(by.xpath('//*[@id="flash"]/text()'))
-
   }
 
   visit () {
@@ -20,4 +19,3 @@ class Login {
   }
 }
 module.exports = Login
-

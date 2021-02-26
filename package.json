@@ -22,7 +22,9 @@
       "element",
       "expect",
       "it",
-      "jasmine"
+      "jasmine",
+      "protractor",
+      "xit"
     ]
   },
   "repository": {
