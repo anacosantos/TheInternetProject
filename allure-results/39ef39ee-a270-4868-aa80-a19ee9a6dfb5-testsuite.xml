@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1614356268270' stop='1614356268312'>
+    <name>Given I'm at the home page Find element of Welcome to the-internet</name>
+    <title>Given I'm at the home page Find element of Welcome to the-internet</title>
+    <test-cases>
+        <test-case start='1614356268271' status='passed' stop='1614356268312'>
+            <name>get elements</name>
+            <title>get elements</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

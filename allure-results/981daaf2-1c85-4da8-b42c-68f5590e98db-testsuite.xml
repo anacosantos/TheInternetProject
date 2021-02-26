@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1614356314822' stop='1614356322474'>
+    <name>Given the login page Testing loginpage,</name>
+    <title>Given the login page Testing loginpage,</title>
+    <test-cases>
+        <test-case start='1614356314822' status='pending' stop='1614356314824'>
+            <name>Check if logout and press browser back button return to login page</name>
+            <title>Check if logout and press browser back button return to login page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1614356314824' status='passed' stop='1614356315737'>
+            <name>Check color flag with wrong login</name>
+            <title>Check color flag with wrong login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614356315737' status='passed' stop='1614356316580'>
+            <name>Check color flag with correct login</name>
+            <title>Check color flag with correct login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614356316580' status='passed' stop='1614356317402'>
+            <name>Check if button login works with enter button</name>
+            <title>Check if button login works with enter button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614356317402' status='passed' stop='1614356318245'>
+            <name>Check if blank fields shows up error message - Negative</name>
+            <title>Check if blank fields shows up error message - Negative</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614356318245' status='passed' stop='1614356319066'>
+            <name>Check wrong username and password shows up error message - Negative</name>
+            <title>Check wrong username and password shows up error message - Negative</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614356319066' status='passed' stop='1614356320446'>
+            <name>Check if the button logout works on secure page - Positive</name>
+            <title>Check if the button logout works on secure page - Positive</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614356320446' status='passed' stop='1614356321245'>
+            <name>Check if valid username and invalid password shows up error massage - Negative</name>
+            <title>Check if valid username and invalid password shows up error massage - Negative</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614356321245' status='passed' stop='1614356321603'>
+            <name>Check if userNameLabel and passwordLabel shows up</name>
+            <title>Check if userNameLabel and passwordLabel shows up</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614356321603' status='passed' stop='1614356322473'>
+            <name>Check if corret username and password change the page and shows up success message - Positive</name>
+            <title>Check if corret username and password change the page and shows up success message - Positive</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
