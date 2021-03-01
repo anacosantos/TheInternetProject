@@ -23,7 +23,6 @@
       "expect",
       "it",
       "jasmine",
-      "protractor",
       "xit"
     ]
   },
