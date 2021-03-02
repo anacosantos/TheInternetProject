@@ -1,7 +1,11 @@
-## Add element
+## Add element button exist
+- Access URL,
+- Verify if add element button exist and ths text button is correct,
+
+## Add element button works
 - Access URL,
 - Click on add element button,
-- Check if the element shows up.
+- Check if the element(delete button) shows up.
 
 ## Delete element
 - Access URL,
