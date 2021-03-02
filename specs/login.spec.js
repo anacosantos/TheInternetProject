@@ -14,7 +14,8 @@ describe('Given the login page', () => {
 
   beforeAll(() => {
     loginPage = new Login()
-    loginPage.visit()
+    // Isn,t necesssary because there is beforeEach above
+    // loginPage.visit()
   })
 
   describe('Testing loginpage,', () => {
@@ -23,17 +24,17 @@ describe('Given the login page', () => {
       loginPage.visit()
     })
 
-    it('Check if userNameLabel and passwordLabel shows up', () => {
-      waitForElementVisibility(loginPage.userNameLabel)
+    it('Check if userNameLabel and passwordLabel shows up - Positive', () => {
+      waitForElementVisibility(loginPage.usernameLabel)
       // get Element value getText() and check it
-      expect(loginPage.userNameLabel.getText()).toBe('Username')
+      expect(loginPage.usernameLabel.getText()).toBe('Username')
       // get Element value and check it
       expect(loginPage.passwordLabel.getText()).toBe('Password')
     })
 
     it('Check if corret username and password change the page and shows up success message - Positive', () => {
       // insert username on text field .sendKeys('String')
-      loginPage.userNameField.sendKeys(correctUsername)
+      loginPage.usernameField.sendKeys(correctUsername)
       // insert password on text field .sendKeys('String')
       loginPage.passwordField.sendKeys(corretPassword)
       // click on button
@@ -45,7 +46,7 @@ describe('Given the login page', () => {
     })
 
     it('Check wrong username and password shows up error message - Negative', () => {
-      loginPage.userNameField.sendKeys(wrongUsername)
+      loginPage.usernameField.sendKeys(wrongUsername)
       loginPage.passwordField.sendKeys(wrongPassword)
       loginPage.loginButton.click()
       // check if show up error message when type both wrong username and password
@@ -55,7 +56,7 @@ describe('Given the login page', () => {
     })
 
     it('Check if valid username and invalid password shows up error massage - Negative', () => {
-      loginPage.userNameField.sendKeys(correctUsername)
+      loginPage.usernameField.sendKeys(correctUsername)
       loginPage.passwordField.sendKeys(wrongPassword)
       loginPage.loginButton.click()
       // check if shows up error message when type correct username and wrong password
@@ -65,7 +66,7 @@ describe('Given the login page', () => {
     })
 
     it('Check if blank fields shows up error message - Negative', () => {
-      loginPage.userNameField.sendKeys('')
+      loginPage.usernameField.sendKeys('')
       loginPage.passwordField.sendKeys('')
       loginPage.loginButton.click()
       // check if shows up error message when filds are blanck
@@ -74,7 +75,7 @@ describe('Given the login page', () => {
     })
 
     it('Check if the button logout works on secure page - Positive', () => {
-      loginPage.userNameField.sendKeys(correctUsername)
+      loginPage.usernameField.sendKeys(correctUsername)
       loginPage.passwordField.sendKeys(corretPassword)
       loginPage.loginButton.click()
       // check if after login the browser is going to secure page
@@ -89,13 +90,13 @@ describe('Given the login page', () => {
       expect(loginPage.successMessage.getText()).toBe('You logged out of the secure area!\n×')
     })
 
-    it('Check if button login works with enter button', () => {
-      // in this case how the enter button doesn't work in firefox, I did a function to exclud it
+    it('Check if button login works with enter button - Positive', () => {
+      // in this case how the enter button doesn't work in firefox, I did a function to exclude it
       browser.getCapabilities().then(function (cap) {
         if (cap.get('browserName') === 'firefox') {
           expect(true).toBe(true)
         } else {
-          loginPage.userNameField.sendKeys(correctUsername)
+          loginPage.usernameField.sendKeys(correctUsername)
           // this function works to press enter
           loginPage.passwordField.sendKeys(corretPassword).sendKeys(protractor.Key.ENTER)
           // check if the browser is going to secure page
@@ -106,8 +107,8 @@ describe('Given the login page', () => {
       })
     })
 
-    it('Check color flag with wrong login', async () => {
-      loginPage.userNameField.sendKeys(wrongUsername)
+    it('Check color flag with wrong login - Negative', async () => {
+      loginPage.usernameField.sendKeys(wrongUsername)
       loginPage.passwordField.sendKeys(wrongPassword)
       loginPage.loginButton.click()
       // check if error flag is red color without String manipulation
@@ -122,8 +123,8 @@ describe('Given the login page', () => {
       expect(rgbAsString.search('198, 15, 19')).not.toBe(-1)
     })
 
-    it('Check color flag with correct login', async () => {
-      loginPage.userNameField.sendKeys(correctUsername)
+    it('Check color flag with correct login - Positive', async () => {
+      loginPage.usernameField.sendKeys(correctUsername)
       loginPage.passwordField.sendKeys(corretPassword)
       loginPage.loginButton.click()
       // check if success flag is green color without String manipulation
@@ -138,9 +139,9 @@ describe('Given the login page', () => {
       expect(rgbAsString.search('93, 164, 35')).not.toBe(-1)
     })
 
-    // I used "x" in it to temporarily disable it because the browser is not acting correctly in this test
-    xit('Check if logout and press browser back button return to login page', () => {
-      loginPage.userNameField.sendKeys(correctUsername)
+    // I used "x" in it() to temporarily disable it because the website is not acting correctly in this test
+    xit('Check if logout and press browser back button return to login page - Negative', () => {
+      loginPage.usernameField.sendKeys(correctUsername)
       loginPage.passwordField.sendKeys(corretPassword)
       loginPage.loginButton.click()
       expect(browser.getCurrentUrl()).toBe(provideConfig().baseUrl + 'secure')

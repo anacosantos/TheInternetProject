@@ -2,9 +2,9 @@
 const { element } = require('protractor')
 class Login {
   constructor () {
-    this.userNameLabel = element(by.xpath("//label[.='Username']"))
+    this.usernameLabel = element(by.xpath("//label[.='Username']"))
     this.passwordLabel = element(by.xpath("//label[.='Password']"))
-    this.userNameField = element(by.xpath("//input[@id='username']"))
+    this.usernameField = element(by.xpath("//input[@id='username']"))
     this.passwordField = element(by.xpath("//input[@id='password']"))
     this.loginButton = element(by.css('.fa'))
     this.successMessage = element(by.css('.success'))
