@@ -1,8 +1,8 @@
 const { browser } = require('protractor')
 const { waitForElementVisibility } = require('protractor-helper')
 const { protractor } = require('protractor/built/ptor')
-const Login = require('../page-objects/login')
-const provideConfig = require('../utils/configCreator')
+const Login = require('../../page-objects/login')
+const provideConfig = require('../../utils/configCreator')
 
 describe('Given the login page', () => {
   let loginPage

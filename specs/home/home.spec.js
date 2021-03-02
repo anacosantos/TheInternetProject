@@ -1,5 +1,5 @@
 
-const Home = require('../page-objects/home')
+const Home = require('../../page-objects/home')
 
 describe('Given I\'m at the home page', () => {
   let homepage
