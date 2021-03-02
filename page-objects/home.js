@@ -1,5 +1,5 @@
 const { browser } = require('protractor')
-const provideConfig = require('../utils/configCreator')
+// const provideConfig = require('../utils/configCreator')
 
 class Home {
   constructor () {
@@ -7,7 +7,8 @@ class Home {
   }
 
   visit () {
-    browser.get(provideConfig().baseUrl)
+    // browser.get(provideConfig().baseUrl)
+    browser.get('')
   }
 }
 
