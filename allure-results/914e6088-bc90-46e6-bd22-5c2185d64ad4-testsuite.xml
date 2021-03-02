@@ -1,9 +1,9 @@
 <?xml version='1.0'?>
-<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1614000006824' stop='1614000006857'>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1614618950059' stop='1614618950094'>
     <name>Given I'm at the home page Find element of Welcome to the-internet</name>
     <title>Given I'm at the home page Find element of Welcome to the-internet</title>
     <test-cases>
-        <test-case start='1614000006824' status='passed' stop='1614000006856'>
+        <test-case start='1614618950060' status='passed' stop='1614618950093'>
             <name>get elements</name>
             <title>get elements</title>
             <labels/>
