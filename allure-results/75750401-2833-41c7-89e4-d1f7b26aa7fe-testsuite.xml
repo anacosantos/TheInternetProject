@@ -1,0 +1,51 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1614775886416' stop='1614775886428'>
+    <name>Given the add and delete element page</name>
+    <title>Given the add and delete element page</title>
+    <test-cases>
+        <test-case start='1614775886422' status='failed' stop='1614775886427'>
+            <name>Verify multiples elements are being showed on the screen</name>
+            <title>Verify multiples elements are being showed on the screen</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: by.class is not a function</message>
+                <stack-trace>TypeError: by.class is not a function
+                    at new AddDelElement (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/page-objects/add-del-element.js:7:46)
+                    at UserContext.&lt;anonymous> (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/specs/add-del-elements/add-del-element.spec.js:11:18)
+                    at /Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasminewd2/index.js:112:25
+                    at new ManagedPromise (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+                    at ControlFlow.promise (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+                    at schedulerExecute (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasminewd2/index.js:95:18)
+                    at TaskQueue.execute_ (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+                    at TaskQueue.executeNext_ (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+                    at /Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/selenium-webdriver/lib/promise.js:2927:27
+                    at /Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/selenium-webdriver/lib/promise.js:668:7
+                From: Task: Run beforeAll in control flow
+                    at UserContext.&lt;anonymous> (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasminewd2/index.js:94:19)
+                    at attempt (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at QueueRunner.execute (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+                    at queueRunnerFactory (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+                    at UserContext.fn (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5325:13)
+                    at attempt (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+                    at QueueRunner.run (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+                    at QueueRunner.execute (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+                    at queueRunnerFactory (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/specs/add-del-elements/add-del-element.spec.js:10:5)
+                    at addSpecsToSuite (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/specs/add-del-elements/add-del-element.spec.js:6:1)
+                    at Module._compile (internal/modules/cjs/loader.js:1015:30)
+                    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+                    at Module.load (internal/modules/cjs/loader.js:879:32)
+                    at Function.Module._load (internal/modules/cjs/loader.js:724:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

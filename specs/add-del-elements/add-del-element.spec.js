@@ -1,42 +1,39 @@
-const { ExpectedConditions } = require("protractor")
-const AddDelElement = require("../../page-objects/add-del-element")
-
-
+const { ExpectedConditions } = require('protractor')
+const AddDelElement = require('../../page-objects/add-del-element')
 
 describe('Given the add and delete element page', () => {
-    let addDel
-    
+  let addDel
 
-    beforeAll(() => {
-        addDel = new AddDelElement()
-    })
+  beforeAll(() => {
+    addDel = new AddDelElement()
+  })
 
-    beforeEach(() => {
-        addDel.visit()
-        
-    })
+  beforeEach(() => {
+    addDel.visit()
+  })
 
-    it('Check if element is add', () => {
-        addDel.addElementButton.click()
-        expect(addDel.addElementButton.getText()).toBe('Add Element')
-    })
-     
-    it('Add element button works', () => {
-        addDel.addElementButton.click()
-        expect(addDel.delElementButton.getText()).toBe('Delete')
-    })
+  it('Check if element is add', () => {
+    addDel.addElementButton.click()
+    expect(addDel.addElementButton.getText()).toBe('Add Element')
+  })
 
-    it('Delete element', () => {
-        addDel.addElementButton.click()
-        addDel.delElementButton.click()
-        expect(addDel.delElementButton.isPresent()).toBe(false)
-    })
+  it('Add element button works', () => {
+    addDel.addElementButton.click()
+    expect(addDel.delElementButton.getText()).toBe('Delete')
+  })
 
-    it('Verify multiples elements are being showed on the screen', () => {
-       for (i = 0; i < 5; i++) {
-        addDel.addElementButton.click()
-       }
-       expect().toBe()
-     
-    })
+  it('Delete element', () => {
+    addDel.addElementButton.click()
+    addDel.delElementButton.click()
+    expect(addDel.delElementButton.isPresent()).toBe(false)
+  })
+
+  it('Verify multiples elements are being showed on the screen', () => {
+    const totalElements = 10
+    for (i = 0; i < totalElements; i++) {
+      addDel.addElementButton.click()
+    }
+    expect(addDel.delElementButton.getText()).toBe('Delete')
+    expect(addDel.allDelButtons.count()).toBe(totalElements)
+  })
 })
