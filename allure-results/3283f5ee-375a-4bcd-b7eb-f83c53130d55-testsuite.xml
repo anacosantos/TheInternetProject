@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1614785066639' stop='1614785069092'>
+    <name>Given the add and delete element page</name>
+    <title>Given the add and delete element page</title>
+    <test-cases>
+        <test-case start='1614785066641' status='passed' stop='1614785069091'>
+            <name>Verify if elements are being deleted</name>
+            <title>Verify if elements are being deleted</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

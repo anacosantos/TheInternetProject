@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1614785254527' stop='1614785259452'>
+    <name>Given the add and delete element page</name>
+    <title>Given the add and delete element page</title>
+    <test-cases>
+        <test-case start='1614785254534' status='passed' stop='1614785256937'>
+            <name>Verify if page refreshed delete all elements on the screen</name>
+            <title>Verify if page refreshed delete all elements on the screen</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614785256937' status='passed' stop='1614785257885'>
+            <name>Verify if elements are being deleted</name>
+            <title>Verify if elements are being deleted</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614785257885' status='passed' stop='1614785258453'>
+            <name>Verify multiples elements are being showed on the screen</name>
+            <title>Verify multiples elements are being showed on the screen</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614785258453' status='passed' stop='1614785258800'>
+            <name>Delete element</name>
+            <title>Delete element</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614785258800' status='passed' stop='1614785259130'>
+            <name>Add element button works</name>
+            <title>Add element button works</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1614785259130' status='passed' stop='1614785259452'>
+            <name>Check if element is add</name>
+            <title>Check if element is add</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
