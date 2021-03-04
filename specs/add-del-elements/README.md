@@ -1,6 +1,6 @@
-## Add element button exist
+## Add element button exists
 - Access URL,
-- Verify if add element button exist and ths text button is correct,
+- Verify if add element button exists and this text button is correct.
 
 ## Add element button works
 - Access URL,
@@ -24,11 +24,11 @@
 - Click on delele button,
 - Check if 5 elements was deleted.
 
-## Verify if page refreshed delete all elements on the screen
+## Verify if when page refreshed delete all elements on the screen
 - Access URL,
 - Click on add element button 3 times,
 - Click on refresh page button,
-- Check if all element was deleted.
+- Check if all elements was deleted.
 
 
 
