@@ -2,7 +2,7 @@ name: Lint and tests
 on: push
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
       - name: Project checkout
         uses: actions/checkout@v1
