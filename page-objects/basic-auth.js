@@ -1,16 +1,15 @@
-const { browser } = require("protractor")
-const helper = require('protractor-helper')
+const { browser } = require('protractor')
 const { element } = require('protractor')
 
 class BasicAuth {
-    constructor(){
-        this.content= element.all(by.id('content'))
-        this.successMessage = this.content.all(by.css('.example p'))
-    }
+  constructor () {
+    this.content = element.all(by.id('content'))
+    this.successMessage = this.content.all(by.css('.example p'))
+  }
 
-    visit(){
-        browser.get('basic_auth')
-    }
+  visit () {
+    browser.get('basic_auth')
+  }
 }
 
 module.exports = BasicAuth
