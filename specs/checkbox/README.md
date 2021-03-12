@@ -8,11 +8,12 @@
 
 ## Checkbox 2 is selected by default
 - Access Url
-- Verify if checkbox 2 is selected when  the Url is accessed
+- Verify if checkbox 2 is selected when the Url is accessed
 
 ## Checkboxes are clickables
 - Access Url
-- Verify if checkboxes are clickable
+- Click on checkbox 1 and checkbox 2
+- Verify if checkboxes are clickable if the value was changed
 
 ## Select Checkbox 1 and deselect 2
 - Access Url
