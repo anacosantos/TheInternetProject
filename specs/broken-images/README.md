@@ -1,4 +1,4 @@
-## Title exist
+## Title exists
 - Access Url
 - Verify if title Broken Images exist on the web page
 
