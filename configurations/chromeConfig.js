@@ -4,7 +4,7 @@ module.exports.config = configCreator({
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
-      //args: ['--headless']
+      args: ['--headless']
     }
   }
 })
