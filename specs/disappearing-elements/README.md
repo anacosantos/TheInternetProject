@@ -29,6 +29,12 @@
 - Click on refresh button
 - Verify if there are the same numbers of buttons
 
+## Check if the buttons was added or removed after refresh
+- Access Url
+- Put in variable how many buttons is appearing
+- Click on refresh button
+- Verify if is the same numbers of buttons
+
 
 
 
