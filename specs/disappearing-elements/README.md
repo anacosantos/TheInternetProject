@@ -9,19 +9,19 @@
 ## Check if the buttons are going to their respective page
 - Access Url
 - Click on Home Button
-- Verify if go to Home page
+- Verify if goes to Home page
 
 - Access Url
 - Click on About button
-- Verify if go to About page
+- Verify if goes to About page
 
 - Access Url
 - Click on Contact Us button
-- Verify if go to Contact Us page
+- Verify if goes to Contact Us page
 
 - Access Url
 - Click on Portfolio button
-- Verify if go to Portfolio page
+- Verify if goes to Portfolio page
 
 ## Refresh button appering another button
 - Access Url
@@ -31,7 +31,7 @@
 
 ## Check if the buttons was added or removed after refresh
 - Access Url
-- Put in variable how many buttons is appearing
+- Check how many buttons is appearing
 - Click on refresh button
 - Verify if is the same numbers of buttons
 
