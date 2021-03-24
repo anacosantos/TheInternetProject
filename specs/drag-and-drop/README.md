@@ -11,7 +11,3 @@
 - Drag box A on top of box B and drop
 - Verify if box A change to box B
 
-## Check if box B change to box A
-- Access Url
-- Drag box B on top of box A and drop
-- Verify if box B change to box A
