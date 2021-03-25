@@ -39,7 +39,9 @@
   "homepage": "https://github.com/anacosantos/TheInternetProject#readme",
   "dependencies": {
     "faker": "^5.4.0",
+    "html-dnd": "^1.2.1",
     "jasmine-allure-reporter": "^1.0.2",
+    "jasmine2-custom-message": "^0.9.3",
     "lint": "^0.7.0",
     "protractor": "^7.0.0",
     "protractor-helper": "^4.2.0",
