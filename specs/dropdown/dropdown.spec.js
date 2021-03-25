@@ -13,12 +13,12 @@ describe('Give me Dropdown page', () => {
   })
 
   it('Check if select field there is "Please select an option" by default', () => {
-    expect(dropdown.selector2.first().getText()).toBe('Please select an option')
+    expect(dropdown.optionList.first().getText()).toBe('Please select an option')
   })
 
   it('Check if option 1 and 2 exist', () => {
-    dropdown.selector2.getText().then((selected) => {
-      expect(selected.join().search('Option 1,Option 2')).toBe(24)
+    dropdown.optionList.getText().then((selected) => {
+      expect(selected.join().search('Option 1,Option 2')).not.toBe(-1)
     })
   })
 
@@ -35,7 +35,7 @@ describe('Give me Dropdown page', () => {
   })
 
   it('Check if all elements were selected', () => {
-    dropdown.selector2.each((selected) => {
+    dropdown.optionList.each((selected) => {
       selected.click()
       expect(selected.getAttribute('selected')).toBe('true')
     })
