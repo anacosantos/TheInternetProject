@@ -8,19 +8,19 @@ class DragAndDrop {
     this.boxB = element(by.id('column-b'))
   }
 
-  visit() {
+  visit () {
     browser.get('drag_and_drop')
   }
 
-  getTitleA() {
+  getTitleA () {
     return 'A'
   }
 
-  getTitleB() {
+  getTitleB () {
     return 'B'
   }
 
-  getDragAndDropTitle() {
+  getDragAndDropTitle () {
     return 'Drag and Drop'
   }
 }
