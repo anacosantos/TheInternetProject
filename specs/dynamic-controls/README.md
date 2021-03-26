@@ -24,6 +24,28 @@
 - Check if the filled field is enable
 - Check if "It's enabled" appear after click on enable button
 
+## Check if possible fill field 
+- Access Url
+- Click on Enable button 
+- Wait for it appear
+- Check if the filled field is enable
+- fill field if something data 
+- Check if put some data on field will be save
+
+## Check if disable button is clickable 
+- Access Url
+- Click on Enable button 
+- Check if wait for it appear
+- Check if the filled field is enable
+- fill field if something data 
+- Click on Disable button
+- Check if Disable button works
+- Check if enablee button appear again
+
+
+
+
+
 
 
 
