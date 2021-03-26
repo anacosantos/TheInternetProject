@@ -13,23 +13,43 @@ describe('Give me Dynamic Controls page', () => {
     //     expect(dynamicControls.title.getText()).toBe('Dynamic Controls')
     // })
 
-    it('Check if possible remove a checkbox', () =>{
-        dynamicControls.checkboxInput.click()
-        browser.sleep(5000)
-        dynamicControls.removeButton.click()
-       // browser.sleep(5000)
-        browser.wait( ExpectedConditions.invisibilityOf(dynamicControls.loading), 5000 )
-        //console.log(dynamicControls.loading)
-        expect(dynamicControls.loading.getText()).toBe('Wait for it...')
+    // it('Check if possible remove a checkbox', () =>{
+    //     dynamicControls.checkboxInput.click()
+    //     dynamicControls.removeButton.click()
+    //     browser.wait( ExpectedConditions.invisibilityOf(dynamicControls.loading), 5000 ).then(()=>{
+    //         expect(dynamicControls.loading.isPresent()).toBe(true)
+    //         expect(dynamicControls.gone.isPresent()).toBe(true)
+    //         expect(dynamicControls.checkboxInput.isPresent()).toBe(false)
+    //     })    
+    //  })
+         
+    // it('Check if Add is clicable and works', () => {
+    //     dynamicControls.checkboxInput.click()
+    //     dynamicControls.removeButton.click()
+    //     browser.wait( ExpectedConditions.invisibilityOf(dynamicControls.loading), 5000 )
+    //     dynamicControls.addButton.click()
+    //     browser.wait( ExpectedConditions.invisibilityOf(dynamicControls.styleLoading), 5000 ).then(()=> {
+    //        dynamicControls.allLoading.each(item => {
+    //             expect(item.isDisplayed()).toBe(false);
+    //             expect(dynamicControls.back.isPresent()).toBe(true)
+    //             expect(dynamicControls.checkbox.isPresent()).toBe(true)
+    //        })
+            
+    //     })
+    // }) 
+    
+    // it('Check if anable button works and become filled field', () => { 
+    //     dynamicControls.enableButton.click()
+    //     browser.wait(ExpectedConditions.invisibilityOf(dynamicControls.loading), 5000 )
+    //     expect(dynamicControls.field.isEnabled()).toBe(true)
+    //     expect(dynamicControls.enabled.isPresent()).toBe(true)
+    // })
 
-        //dynamicControls.removeButton.click()
-        
-        
-    })
+    it('')
+
+
 })
 
-//browser.wait( EC.invisibilityOf( $('#selector') ), 5000 );
-//browser.wait(EC.invisibilityOf($('#abc')), 5000);
 
 
 
@@ -37,8 +57,6 @@ describe('Give me Dynamic Controls page', () => {
 
 
 
-//           browser.manage().timeouts().implicitlyWait(10000);
+ 
    
-//element.all(by.css('some-css')).first().element(by.tagName('tag-within-css'));
-// element.all(by.css('some-css')).get(index).element(by.tagName('tag-within-css'));
-// element.all(by.css('some-css')).first().all(by.tagName('tag-within-css'));
+
