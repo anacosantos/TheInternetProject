@@ -1,13 +1,16 @@
-const { browser } = require("protractor")
+const { browser } = require('protractor')
 
 class EntryAd {
-    constructor () {
-        this.title = element(by.css('#content h3'))
-    }
+  constructor () {
+    this.title = element(by.css('.example h3'))
+    this.modalWindow = element(by.css('#modal'))
+    this.closeButton = element(by.xpath("//p[.='Close']"))
+    this.clickHereButton = element(by.css('#restart-ad'))
+  }
 
-    visit () {
-        browser.get('entry_ad')
-    }
+  visit () {
+    browser.get('entry_ad')
+  }
 }
 
-module.exports = EntryAd 
+module.exports = EntryAd
