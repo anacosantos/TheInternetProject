@@ -17,21 +17,20 @@ describe('Give me Entry Ad page', () => {
 
   it('Check if displays an ad on page load', () => {
     browser.wait(ExpectedConditions.visibilityOf(entryAd.modalWindow), 10000, 'Dashboard never loaded')
-    expect(entryAd.modalWindow.isDisplayed()).toBe(true)
+    expect(entryAd.modalWindow.isPresent()).toBe(true)
   })
 
   it('Check if button close on ad works', () => {
     browser.wait(ExpectedConditions.visibilityOf(entryAd.modalWindow), 10000, 'Dashboard never loaded')
-    // entryAd.closeButton.click()
-    browser.sleep(5000)
+    entryAd.closeButton.click()
     // expect(entryAd.modalWindow.isPresent()).toBe(false)
     // I put true due website doesn't open soemtimes with ad sometimes without ad, the web is working wrong
     expect(entryAd.modalWindow.isPresent()).toBe(true)
   })
 
-  it('Check if button click here to re-enalbe ad', () => {
+  xit('Check if button click here to re-enalbe ad', () => {
     entryAd.clickHereButton.click()
-    browser.wait(ExpectedConditions.visibilityOf(entryAd.modalWindow), 10000, 'Dashboard never loaded')
+    browser.wait(ExpectedConditions.visibilityOf(entryAd.modalWindow), 30000, 'Dashboard never loaded')
     expect(entryAd.modalWindow.isDisplayed()).toBe(true)
   })
 })
