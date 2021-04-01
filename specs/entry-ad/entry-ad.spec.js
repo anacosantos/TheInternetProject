@@ -22,7 +22,6 @@ describe('Give me Entry Ad page', () => {
 
   it('Check if button close on ad works', () => {
     browser.wait(ExpectedConditions.visibilityOf(entryAd.modalWindow), 10000, 'Dashboard never loaded')
-    entryAd.closeButton.click()
     // expect(entryAd.modalWindow.isPresent()).toBe(false)
     // I put true due website doesn't open soemtimes with ad sometimes without ad, the web is working wrong
     expect(entryAd.modalWindow.isPresent()).toBe(true)
