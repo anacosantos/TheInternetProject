@@ -16,61 +16,67 @@ describe('Give me File Downloader page', () => {
     // })
 
     // it('Check if all files exist', () => {
-    //   expect(fileDownloader.downloadList.count()).toBe(16)
-    //     fileDownloader.downloadList.getText().then((list) => {
-    //         expect(list.join().search('cachureos - lo que no pudimos hacer.mp3',
-    //         'hello_world.txt',
-    //         'Test.txt',
+    //   expect(fileDownloader.downloadList.count()).toBe(33)
+    //     fileDownloader.downloadList.getText().then((list) => { 
+    //         expect(list.join().search('TextFile.txt',
+    //         'upload.jpeg',
+    //         'Pic.png',
+    //         'webdriverIO.png',
     //         'test.txt',
-    //         'Dashboard Queries.docx',
     //         'ObjectivityTestAutomationCSHarpFramework.txt',
-    //         'webdriver.png',
-    //         'Capture.PNG',
-    //         '155993895_3732544906866484_3036794238296956416_o.jpg',
+    //         'code.js',
+    //         'Sti_Trace.log',
+    //         'second.jpg',
+    //         'photo.jpg',
+    //         'hello_world.txt',
+    //         'chromedriver.exe',
+    //         'somethin.txt',
+    //         'Dockerfile.txt',
+    //         'text.txt',
+    //         'automation-test.txt',
+    //         'testUpload.json',
+    //         'upload_text_file.txt',
+    //         'MAOC19_Bronze-Class5-Girls_FS_Scores.pdf',
+    //         'file_upload_test.txt',
+    //         'NewTest.txt',
+    //         'upload.txt',
+    //         'BrowserStack.jpg',
+    //         '10.jpg',
+    //         '2.jpg',
+    //         'img.png',
     //         'some-file.txt',
-    //         'avatar.jpeg',
-    //         'Black.jpg',
-    //         'empty.txt',
-    //         'test.png',
-    //         'PMBOK_Guide5th_Spanish.pdf',
-    //         'upload_file.xlsx'))
+    //         'question.txt',
+    //         '1OrnW9c1nXw.jpg',
+    //         'img4.jpg',
+    //         'image_2021-02-27_18-57-41.png',
+    //         'sample.png',
+    //         'empty.txt'))
     //         .not.toBe(-1)
     //     })        
     // })
 
     it('Check if all list is clickable and check if all list was saved', () => {
-         //var filename = downloadsPath + '/empty.txt' 
+        //var filename = downloadsPath + '/empty.txt' 
        // fileDownloader.downloadList.click()
 
        fileDownloader.downloadList.each((elementList) => {
-            //elementList.click()  
-            var 
-            var filename = downloadsPath + elementList.getText().then((nameList) => console.log('/'+nameList))
+           // elementList.click()  
+             
+           // var filename = downloadsPath + elementList.getText().then((nameList) => console.log('/'+nameList))
+           var filename = downloadsPath + elementList.getText().then((nameList) => {
+               console.log(filename)
+               //expect(filename.trim()).toBe('/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/downloads/'+ nameList)
+           })
+           //expect(filename.trim()).toBe('/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/downloads/'+ nameList)
             //trim() was used to join files's name and take off space, hyphen and dash
-            filename.trim()
-
-           // console.log(filename)
-
-         
-
-        //    if (fs.existsSync(filename)) {   
-
-        //     expect(fs.existsSync(filename)).toBe(nameList)
-        // //     // delete if there is any existing file with same name
-        // //     // fs.unlinkSync(filename);
-        // //     // })    
-        // }
-
+            //filename.trim()            
+            
         })
-
-       
-       
-
-
-    
+    })
+})
 
 
-        // fileDownloader.downloadList.each((elementList) => {
+ // fileDownloader.downloadList.each((elementList) => {
         //     elementList.click()
            
             // deleteAlreadyDownloadedFiles: (function(){
@@ -83,7 +89,7 @@ describe('Give me File Downloader page', () => {
             //     }
             // }
             
-        
+   //  ***************************************************************************   
         // browser.driver.wait(function () {
         //     return fs.existsSync(filename);
         //     }, 30000).then(function() {
@@ -93,13 +99,13 @@ describe('Give me File Downloader page', () => {
         //         )
         //     console.log("Getting the ERROR while downloading file as file is not downloaded.");
         // })
-    })
-})
+         
+  //************************************************************************************
 
-// browser.driver.wait(function() {
-//     return fs.existsSync(filename);
-// }, 30000).then(function() {
-//     expect(fs.readFileSync(filename, { encoding: 'utf8' })).toEqual(
-//         "A,B,C\r\n"
-//     );
-// });
+        //    if (fs.existsSync(filename)) {   
+
+        //     expect(fs.existsSync(filename)).toBe(nameList)
+        // //     // delete if there is any existing file with same name
+        // //     // fs.unlinkSync(filename);
+        // //     // })    
+        // }
