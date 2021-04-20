@@ -56,22 +56,33 @@ describe('Give me File Downloader page', () => {
     // })
 
     it('Check if all list is clickable and check if all list was saved', () => {
-        //var filename = downloadsPath + '/empty.txt' 
-       // fileDownloader.downloadList.click()
+    
+        // var filename = downloadsPath + '/' + "Useful links.doc";
+        // //var filename2 = "/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/downloads/TEMP FILE.txt"
+        // console.log(filename)
+        // fileDownloader.downloadList.first().getText().then((namee) => console.log(fs.existsSync(downloadsPath + '/' +namee)))
+        // //console.log(fs.existsSync(filename))
+        //console.log(fs.existsSync(filename2))
 
-       fileDownloader.downloadList.each((elementList) => {
-           // elementList.click()  
+        
+        ///Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/downloads/TEMP FILE.txt
+
+
+       fileDownloader.downloadList.each((element) => {
+           //element.click()  
              
-           // var filename = downloadsPath + elementList.getText().then((nameList) => console.log('/'+nameList))
-           var filename = downloadsPath + elementList.getText().then((nameList) => {
-               console.log(filename)
-               //expect(filename.trim()).toBe('/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/downloads/'+ nameList)
+           
+           element.getText().then((name) => { 
+                var filename = downloadsPath + '/' + name;
+                console.log(filename)
+              expect(fs.existsSync(filename)).toBe(true)
+               
            })
-           //expect(filename.trim()).toBe('/Users/anacarolinaoliveiradossantos/Documents/TheInternetProject/downloads/'+ nameList)
             //trim() was used to join files's name and take off space, hyphen and dash
             //filename.trim()            
             
         })
+
     })
 })
 

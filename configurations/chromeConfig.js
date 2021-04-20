@@ -6,7 +6,7 @@ module.exports.config = configCreator({
   capabilities: {
     browserName: 'chrome',
     chromeOptions: {
-      // args: ['--headless'],
+      args: ['--headless'],
       prefs: {
         download: {
           'prompt_for_download': false,
