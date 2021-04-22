@@ -1,6 +1,7 @@
-var path = require('path');
+const dropFile = require("../me.jpg");
 const FileUploader = require('../../page-objects/file-uploader')
-var absolutePath = path.resolve(_dirname, '../../fileUpload')
+var path = require('path');
+const { browser, ExpectedConditions } = require('protractor');
 
 describe('Give me File Uploader page', () => {
     const fileUploader = new FileUploader()
@@ -13,16 +14,24 @@ describe('Give me File Uploader page', () => {
     //     expect(fileUploader.title.getText()).toBe('File Uploader')
     // })
 
-    it('Check if Choose file button is clickable', () => {
-        // fileUploader.chooseFile.getAttribute('name').then((nameContent) => console.log(nameContent))
-        // expect(fileUploader.chooseFile.getAttribute('name')).toBe('file')
+    // it('Check if Choose file button exists and if the file was uploaded', () => {
+    //     expect(fileUploader.chooseFile.getAttribute('name')).toBe('file')
+         
+    //     var fileUpload = '../me.jpg'
+    //     var absolutePath = path.resolve(fileUpload)
+    //     console.log(absolutePath)
+    //     fileUploader.chooseFile.sendKeys(absolutePath)
+    //     fileUploader.uploadButton.click()
+    //     expect(fileUploader.fileUploadedMessage.getText()).toBe('File Uploaded!')
+    // })
 
-
-        var fileUpload = '../abc.txt'
-        var absolutePath = path.resolve(_dirname, fileUpload)
-        console.log(absolutePath)
-        //fileUploader.chooseFile.sendKeys(absolutePath)
-        
+    it('Check if drag and drop a file into the area works', () => {
+        dropFile(fileUploader.dragAndDropId, '../me.jpg');
+        browser.sleep(5000)
+        // wait for the droped image to be displayed in the drop area
+        browser.wait(ExpectedConditions.presenceOf(fileUploader.dragAndDropId))
+        fileUploader.uploadButton.click()
+        expect(fileUploader.dragAndDropId.getText()).toBe('File Uploaded!')
     })
 })
 

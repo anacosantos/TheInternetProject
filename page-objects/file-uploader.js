@@ -5,6 +5,8 @@ class FileUploader {
         this.title = element(by.css('.example h3')) 
         this.chooseFile = element(by.id('file-upload'))
         this.uploadButton = element(by.css('#file-submit'))
+        this.fileUploadedMessage = element(by.css('.example h3'))
+        this.dragAndDropId = element(by.id('drag-drop-upload'))
     }
     
     visit (){
