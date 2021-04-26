@@ -9,7 +9,9 @@
 - Click on Upload button 
 - Check if the file was uploaded
 
-## Check if drag and drop a file into the area works
+## Check if drag and drop a file into the area
 - Access Url
+- Drop file
+- Check if drag and drop a file into the area
 
 
