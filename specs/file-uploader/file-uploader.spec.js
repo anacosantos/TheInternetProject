@@ -3,6 +3,7 @@ const FileUploader = require('../../page-objects/file-uploader')
 const path = require('path')
 const dropFile = require('../../utils/drop-file')
 const filePath = path.resolve(__dirname, '../../uploads/me.jpg')
+
 describe('Give me File Uploader page', () => {
   const fileUploader = new FileUploader()
 
@@ -16,8 +17,7 @@ describe('Give me File Uploader page', () => {
 
   it('Check if Choose file button exists and if the file was uploaded', () => {
     expect(fileUploader.chooseFile.getAttribute('name')).toBe('file')
-    // const fileUpload = '../uploads/me.jpg'
-    // const absolutePath = path.resolve(fileUpload)
+
     const absolutePath = path.resolve(filePath)
     fileUploader.chooseFile.sendKeys(absolutePath)
     fileUploader.uploadButton.click()
