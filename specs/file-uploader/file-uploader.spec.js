@@ -1,9 +1,8 @@
 
 const FileUploader = require('../../page-objects/file-uploader')
 const path = require('path')
-const filePath = path.resolve(__dirname, 'uploads/me.jpg')
 const dropFile = require('../../utils/drop-file')
-
+const filePath = path.resolve(__dirname, '../../uploads/me.jpg')
 describe('Give me File Uploader page', () => {
   const fileUploader = new FileUploader()
 
