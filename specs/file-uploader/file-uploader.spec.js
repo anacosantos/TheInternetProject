@@ -16,8 +16,8 @@ describe('Give me File Uploader page', () => {
 
   it('Check if Choose file button exists and if the file was uploaded', () => {
     expect(fileUploader.chooseFile.getAttribute('name')).toBe('file')
-    //const fileUpload = '../uploads/me.jpg'
-    //const absolutePath = path.resolve(fileUpload)
+    // const fileUpload = '../uploads/me.jpg'
+    // const absolutePath = path.resolve(fileUpload)
     const absolutePath = path.resolve(filePath)
     fileUploader.chooseFile.sendKeys(absolutePath)
     fileUploader.uploadButton.click()
