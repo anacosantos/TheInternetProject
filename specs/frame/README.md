@@ -17,7 +17,8 @@
 - Return to main page
 - Check if returned to main page
 
-## Check if the frames are nested
+## Check if the frames are nested and if possible handle all of them
 - Access Url
 - Click on Nested Frame
-- Check if the frames are nested
+- 
+-  
