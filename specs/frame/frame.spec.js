@@ -26,7 +26,7 @@ describe('Give me Frame page', () =>{
     })
 
     it('Check if iFrame is clickable', () => {
-        frame.contentButton.last().click()
+        frame.iframeButton.click()
         expect(browser.getCurrentUrl()).toBe(URL_IFrame)
         browser.navigate().back()
         expect(browser.getCurrentUrl()).toBe(URL_Frames)
@@ -76,4 +76,9 @@ describe('Give me Frame page', () =>{
             expect(bottom).toBe('frame-bottom')  
         })
     })
+
+    // it('Check if is it possible handle iframe page', () => {
+    //     frame.iframeButton.click()
+    //     expect(browser.getCurrentUrl()).toBe(URL_IFrame)
+    // })
 })

@@ -7,6 +7,7 @@ class Frame {
         this.frameSet = element(by.xpath('/html/frameset/frame[1]')) 
         this.frameBottom = element(by.xpath('/html/frameset/frame[2]'))
        // this.left = element(by.xpath('/html/frameset/frame[1]'))
+       this.iframeButton = element(by.xpath('//*[@id="content"]/div/ul/li[2]/a'))
         
     }
     
