@@ -46,5 +46,9 @@
     "protractor": "^7.0.0",
     "protractor-helper": "^4.2.0",
     "standardjs": "^1.0.0-alpha"
+  },
+  "devDependencies": {
+    "firefox-profile": "^4.2.0",
+    "q": "^1.5.1"
   }
 }
