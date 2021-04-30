@@ -44,7 +44,12 @@
     "jasmine2-custom-message": "^0.9.3",
     "lint": "^0.7.0",
     "protractor": "^7.0.0",
+    "protractor-firefox-support": "^2.0.0",
     "protractor-helper": "^4.2.0",
     "standardjs": "^1.0.0-alpha"
+  },
+  "devDependencies": {
+    "firefox-profile": "^4.2.0",
+    "q": "^1.5.1"
   }
 }
