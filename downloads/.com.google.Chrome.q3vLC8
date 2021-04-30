@@ -1,0 +1,20 @@
+
+By customersMenu = By.xpath("//a[@href='#']//p[contains(text(),'Customers')]");
+By customersMenuItem = By.xpath("//a[@href='/Admin/Customer/List']//p[contains(text(),'Customers')]");
+By addNewBtn = By.xpath("//a[@class='btn btn-primary']");
+By emailTxtFld = By.id("Email");
+By passwordTxtFld = By.id("Password");
+By firstNameTxtFld = By.id("FirstName");
+By lastNameTxtFld = By.id("LastName");
+By genderMale = By.id("Gender_Male");
+By genderFemale = By.id("Gender_Female");
+By dobTxtFld = By.id("DateOfBirth");
+By companyNameTxtFld = By.id("Company");
+By taxExemptTkBox = By.id("IsTaxExempt");
+By newsletterTxtFld = By.xpath("//*[@id="customer-info"]/div[2]/div[9]/div[2]/div/div[1]/div");
+By customerRolesDpLst = By.id("//*[@id="customer-info"]/div[2]/div[10]/div[2]/div/div[1]/div/div");
+By mgrOfVendorDpLst = By.id("VendorId");
+By activeTkBox = By.id("Active");
+By adminComTxtFld = By.id("AdminComment");
+
+
